@@ -1,0 +1,50 @@
+/* pages/music/music.wxss */
+.item{
+	border-bottom: 1rpx solid #ccc;
+	background-color: #ebebf1;
+}
+.box{
+	display: flex;
+	border-bottom: 1rpx solid #ccc;
+	background-color: #fff;
+	margin-bottom: 20rpx;
+}
+.img{
+	width: 30%;
+	overflow: hidden;
+	padding: 30rpx;
+	box-sizing: border-box;
+}
+.white{
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	left: 38%;
+	top: 36%;
+}
+.left{
+	position: relative;
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.left image{
+	width: 100%;
+	height: 100%;
+}
+.info{
+	width: 70%;
+	overflow: hidden;
+	padding: 10rpx 0;
+	box-sizing: border-box;
+}
+.title{
+	font-size: 36rpx;
+}
+.author,.time,.forward{
+	font-size: 30rpx;
+	color: #7c7c82;
+}

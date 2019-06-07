@@ -1,0 +1,50 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="title {{isdark?'dark':''}}">基本资料</view>
+	<view class="user-img {{isdark?'dark':''}}">
+		<view>头像</view>
+		<image bindtap="dealImg" wx:if="{{item.image}}" src="{{imagePrefix+item.image}}"></image>
+	</view>
+	<!-- <view class="background {{isdark?'dark':''}}">
+		<view>背景</view>
+		<image src="../../res/img/user_bg.jpg"></image>
+	</view> -->
+	<view class="nickname {{isdark?'dark':''}}">
+		<view>昵称: {{item.realnickname?item.realnickname:item.nickname}}</view>
+		<image bindtap="dealNickName" src="../../res/img/user_xg.png"></image>
+	</view>
+	<view class="password {{isdark?'dark':''}}">
+		<view>密码: *** ****</view>
+		<image bindtap="dealPassword" src="../../res/img/user_xg.png"></image>
+	</view>
+	<view class="phone {{isdark?'dark':''}}">
+		手机号: <text>{{item.phone}}</text>
+		<text>禁止修改</text>
+	</view>
+</view>
+<!-- 修改昵称 -->
+<view wx:if="{{isNickName}}" class="dealNickName {{isdark?'dark':''}}">
+	<view class="nickname-con">
+		<view class="input">
+			<input adjust-position='true' focus="true" bindinput="dealChange" type="text" placeholder="{{item.nickname}}" id="nickname" value="{{nickname}}"/>
+			<image bindtap="clearInput" src="../../res/img/user_close.jpg"></image>
+		</view>
+		<view bindtap="doIt" class="doIt">保存</view>
+		<view bindtap="goBack" class="goBack">取消</view>
+	</view>
+</view>
+<!-- 修改密码 -->
+<view wx:if="{{isPassword}}" class="dealNickName {{isdark?'dark':''}}">
+	<view class="password-con">
+		<view class="input">
+			<input adjust-position='true' password='true' focus="true" bindinput="dealChange" type="text" placeholder="请输入原密码" id="password" value="{{password}}"/>
+			<image bindtap="clearPassword" src="../../res/img/user_close.jpg"></image>
+		</view>
+		<view class="input">
+			<input adjust-position='true' password='true' bindinput="dealChange" type="text" placeholder="请输入新密码" id="twopassword" value="{{twopassword}}"/>
+			<image bindtap="cleartwoPassword" src="../../res/img/user_close.jpg"></image>
+		</view>
+		<view bindtap="doItPassword" class="doIt">保存</view>
+		<view bindtap="goBackPassword" class="goBack">取消</view>
+	</view>
+</view>

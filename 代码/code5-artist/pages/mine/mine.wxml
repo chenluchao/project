@@ -1,0 +1,51 @@
+<!--pages/mine/mine.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="nav {{isdark?'dark':''}}">
+		<image class="background-img" src="../../res/img/default_indi_bg.png"></image>
+		<view class="user-img">
+			<image src="{{headImage}}"></image>
+		</view>
+		<view class="user-name">{{username}}</view>
+	</view>
+	<view class="btn-item {{isdark?'dark':''}}">
+		<view class="item-title">收藏</view>
+		<navigator hover-class="none" url="/pages/readCollection/readCollection">
+			<view class="item-con">
+				<image src="../../res/img/read1.png"></image>
+				<view>阅读</view>
+			</view>
+		</navigator>
+		<navigator hover-class="none" url="/pages/musicCollection/musicCollection">
+			<view class="item-con">
+				<image src="../../res/img/music1.png"></image>
+				<view>音乐</view>
+			</view>
+		</navigator>
+		<navigator hover-class="none" url="/pages/movieCollection/movieCollection">
+			<view class="item-con">
+				<image src="../../res/img/movie1.png"></image>
+				<view>影视</view>
+			</view>
+		</navigator>
+	</view>
+	<view class="btn-item {{isdark?'dark':''}}">
+		<navigator hover-class="none" url="/pages/userCenter/userCenter">
+			<view class="item-con">
+				<image src="../../res/img/user2.png"></image>
+				<view>个人设置</view>
+			</view>
+		</navigator>
+		<navigator hover-class="none" url="/pages/setting/setting">
+			<view class="item-con">
+				<image src="../../res/img/center_feedback.png"></image>
+				<view>通用设置</view>
+			</view>
+		</navigator>
+	</view>
+	<view class="btn-item {{isdark?'dark':''}}">
+		<view class="item-con foot">
+			<image src="../../res/img/aliwx_reply_bar_close_normal.png"></image>
+			<view bindtap="dealLogout">退出登录</view>
+		</view>
+	</view>
+</view>

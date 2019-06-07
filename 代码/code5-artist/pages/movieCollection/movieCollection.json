@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+	"navigationBarTitleText": "影视收藏",
+	"enablePullDownRefresh":true,
+	"backgroundTextStyle":"dark"
+}

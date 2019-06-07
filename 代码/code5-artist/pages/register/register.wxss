@@ -1,0 +1,73 @@
+/* pages/register/register.wxss */
+.page{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-top: 1rpx solid #a4a4a4;
+	padding: 40rpx;
+	background-color: #eaeaea;
+}
+page{
+	width: 100%;
+	height: 100%;
+}
+.input-box{
+	background-color: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+	border: 1rpx solid #ccc;
+	border-radius: 20rpx;
+}
+.phone{
+	display: flex;
+	width: 100%;
+	height: 91rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+.repeatPassword{
+	display: flex;
+	width: 100%;
+	height: 91rpx;
+}
+.password{
+	display: flex;
+	width: 100%;
+	height: 91rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+.phone input{
+	margin-left: 10rpx;
+	width: 100%;
+	height: 100%;
+}
+.password input,.repeatPassword input{
+	width: 100%;
+	height: 100%;
+	margin-left: 25rpx;
+}
+.phone image{
+	width: 100rpx;
+	height: 90rpx;
+}
+.password image,.repeatPassword image{
+	margin-top: 15rpx;
+	margin-left: 13rpx;
+	width: 70rpx;
+	height: 70rpx;
+}
+.login-btn{
+	margin-top: 20rpx;
+	background-color: #ddd;
+	width: 100%;
+	height: 86rpx;
+	border-radius: 15rpx;
+	text-align: center;
+	font-size: 32rpx;
+	line-height: 86rpx;
+	color: #9a9a9a;
+}
+.active{
+	color: #fff;
+	background-color: #03CCBB;
+}

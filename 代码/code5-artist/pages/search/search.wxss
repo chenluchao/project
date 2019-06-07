@@ -1,0 +1,121 @@
+/* pages/search/search.wxss */
+.page{
+	background-color: #efefef;
+	width: 100%;
+	height: 100%;
+}
+page{
+	width: 100%;
+	height: 100%;
+}
+.search-box{
+	width: 100%;
+	height: 295rpx;
+	padding: 40rpx;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+	border-top: 1rpx solid #ccc;
+	border-bottom: 1rpx solid #ccc;
+}
+.search-con{
+	border-top: 1rpx solid #ccc;
+	border-left: 1rpx solid #ccc;
+	border-right: 1rpx solid #ccc;
+	border-radius: 10rpx 10rpx 0 0;
+	display: flex;
+	background-color: white;
+	overflow: hidden;
+}
+.search-input{
+	width: 85%;
+	padding-top: 25rpx;
+}
+.search-logo{
+	width: 100rpx;
+	height: 100rpx;
+	text-align: center;
+	vertical-align: middle;
+}
+.search-logo image{
+	margin-top: 20rpx;
+	width: 64rpx;
+	height: 64rpx;
+}
+.search-btn{
+	width: 100%;
+	height: 105rpx;
+	background-color: #ddd;
+	color: #9a9a9a;
+	text-align: center;
+	line-height: 105rpx;
+	border-radius: 10rpx;
+}
+.active{
+	background-color: #03ccbb;
+	color: #fff;
+}
+
+.title{
+	font-size: 32rpx;
+	width: 100%;
+	height: 90rpx;
+	line-height: 100rpx;
+	padding-left: 20rpx;
+	border-bottom: 1rpx solid #ccc;
+	background-color: #fff;
+}
+.content{
+	display: flex;
+	width: 100%;
+	border-bottom: 1rpx solid #ccc;
+	padding: 20rpx 20rpx 20rpx 30rpx;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.left{
+	width: 90rpx;
+	height: 90rpx;
+	vertical-align: middle;
+}
+.left image{
+	width: 100%;
+	height: 100%;
+}
+.right{
+	width: 80%;
+	padding-left: 15rpx;
+	vertical-align: middle;
+}
+.line-ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.info-title{
+	font-size: 35rpx;
+}
+.info-con{
+	font-size: 30rpx;
+	color: #83869e;
+}
+.history-box{
+	background-color: #ccc;
+	width: 500rpx;
+	position: absolute;
+	top: 145rpx;
+	left: 142rpx;
+	padding-left: 20rpx;
+	border-radius: 0 0 10rpx 10rpx;
+	opacity: 0.8;
+	box-shadow: 10rpx;
+}
+.history-item{
+	color: #333;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-bottom: 1rpx solid #999;
+	font-size: 30rpx;
+}
+.history-con{
+	width: 100%;
+}

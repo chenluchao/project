@@ -1,0 +1,131 @@
+/* pages/userCenter/userCenter.wxss */
+.page{
+	width: 100%;
+	height: 100%;
+	border-top: 1rpx solid #B2B2B2;
+	box-sizing: border-box;
+	padding-left: 30rpx;
+}
+.title{
+	margin-top: 15rpx;
+	color: #8f8f8f;
+	font-size: 32rpx;
+}
+.user-img{
+	width: 100%;
+	height: 100rpx;
+	margin: 30rpx 15rpx 0 0;
+	display: flex;
+	border-bottom: 1rpx solid #E4E4E4;
+	padding-bottom: 30rpx;
+}
+.user-img image{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.user-img>view{
+	width: 82%;
+	line-height: 100rpx;
+	color: #656565;
+	font-size: 38rpx;
+}
+.background,.nickname,.password{
+	width: 100%;
+	height: 130rpx;
+	margin: 0 15rpx 0 0;
+	display: flex;
+	box-sizing: border-box;
+}
+.background image,.nickname image,.password image{
+	width: 55rpx;
+	height: 55rpx;
+	margin-top: 45rpx;
+}
+.background>view,.nickname>view,.password>view{
+	width: 88%;
+	height: 100%;
+	line-height: 130rpx;
+	color: #656565;
+	font-size: 38rpx;
+	border-bottom: 1rpx solid #E4E4E4;
+}
+.phone{
+	width: 100%;
+	height: 130rpx;
+	color: #656565;
+	line-height: 130rpx;
+}
+.phone text:nth-of-type(1){
+	font-size: 28rpx;
+	color: #c8c8c8;
+}
+.phone text:nth-of-type(2){
+	font-size: 28rpx;
+	color: #c8c8c8;
+	float: right;
+	margin-right: 20rpx;
+}
+/* 修改昵称 */
+page{
+	width: 100%;
+	height: 100%;
+}
+.dealNickName{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #616161;
+}
+.nickname-con{
+	box-sizing: border-box;
+	padding: 0 20rpx 0 20rpx;
+	position: fixed;
+	left: 0;
+	top: 65%;
+	width: 100%;
+	height: 400rpx;
+	border-top: 1rpx solid #fff;
+}
+.input{
+	margin-top: 25rpx;
+	width: 100%;
+	height: 100rpx;
+	border-radius: 15rpx;
+	background-color: #fff;
+	display: flex;
+}
+.input input{
+	width: 80%;
+	height: 100%;
+	margin-left: 20rpx;
+}
+.input image{
+	width: 46rpx;
+	height: 46rpx;
+	margin-top: 27rpx;
+	margin-left: 47rpx;
+}
+.doIt,.goBack{
+	width: 100%;
+	height: 100rpx;
+	border-radius: 15rpx;
+	background-color: #9cc3f1;
+	color: #fff;
+	text-align: center;
+	line-height: 100rpx;
+	margin-top: 25rpx;
+}
+.password-con{
+	box-sizing: border-box;
+	padding: 0 20rpx 0 20rpx;
+	position: fixed;
+	left: 0;
+	top: 57%;
+	width: 100%;
+	height: 400rpx;
+	border-top: 1rpx solid #fff;
+}

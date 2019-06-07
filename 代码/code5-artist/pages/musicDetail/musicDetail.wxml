@@ -1,0 +1,44 @@
+<!--pages/musicDetail/musicDetail.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view wx:if="{{item.img_url}}" class="audio {{isdark?'dark':''}}">
+		<audio id="audio" poster="{{imgUrl+item.img_url}}" name="{{item.album}}" author="{{item.author_name}}" src="{{imgUrl+item.media_url}}" controls="true"></audio>
+	</view>
+	<view class="content {{isdark?'dark':''}}">
+		<view class="img"  wx:if="{{item.img_url}}">
+			<image src="{{imgUrl+item.img_url}}"></image>
+		</view>
+		<view class="title">{{item.title}}</view>
+		<view class="title">{{item.title}}</view>
+		<view class="main">{{item.story_title}}</view>
+		<view class="title">作者:{{item.story_author}}</view>
+		<rich-text wx:if="{{item.real_content}}" class="detail-content" nodes="{{item.real_content}}"></rich-text>
+		<view class="goComment" bindtap="goComment">点击查看评论</view>
+	</view>
+</view>
+<view class="toolbar {{isdark?'dark':''}}">
+	<view class="collect-box">
+		<image bindtap="dealCollection" src="{{isCollection?'../../res/img/bubble_collected.png':'../../res/img/bubble_collect.png'}}"></image>
+		收藏
+	</view>
+	<view class="good-box">
+		<image bindtap="dealGood" src="{{isGood?'../../res/img/bottom_laud_selected.png':'../../res/img/bottom_laud_default.png'}}"></image>
+		点赞
+	</view>
+	<view class="speak-box">
+		<image bindtap="dealComment" src="../../res/img/bottom_comment.png"></image>
+		评论
+	</view>
+	<view class="shell-box">
+		<button open-type='share'><image bindtap="dealShell" src="../../res/img/small_08.png"></image></button>
+		转发
+	</view>
+</view>
+<view wx:if="{{isComment}}" class="mask" bindtap="closeComment"></view>
+<view wx:if="{{isComment}}" class="comment-box {{isdark?'dark':''}}">
+	<textarea class="comment-in" id="comment" fixed="true" maxlength="500" placeholder="在这里写下你想说的" value="{{comment}}" bindinput="commentInput"></textarea>
+	<view class="comment-bar">
+		<view class="comment-length">{{commentLength}}</view>
+		<view class="comment-cancel" bindtap="closeComment">取消</view>
+		<view class="comment-put" bindtap="putComment">发布</view>
+	</view>
+</view>

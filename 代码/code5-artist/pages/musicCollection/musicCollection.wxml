@@ -1,0 +1,21 @@
+<!--pages/musicCollection/musicCollection.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view wx:for="{{list}}" wx:key="{{index}}" class="collection-item {{isdark?'dark':''}}">
+		<navigator hover-class="none" url="{{'/pages/musicDetail/musicDetail?id='+item.id}}">
+			<view class="collection-box {{isdark?'dark':''}}">
+				<view class="item-img" wx:if="{{item.img_url}}">
+					<image src="{{imagePrefix+item.img_url}}"></image>
+				</view>
+				<view class="right">
+					<view class="item-title">
+						{{item.title}}
+					</view>
+					<view class="item-author">
+						{{item.author_name}}
+					</view>
+				</view>
+				
+			</view>
+		</navigator>
+	</view>
+</view>

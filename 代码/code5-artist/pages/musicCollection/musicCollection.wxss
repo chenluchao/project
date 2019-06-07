@@ -1,0 +1,41 @@
+/* pages/musicCollection/musicCollection.wxss */
+.page{
+	width: 100%;
+	height: 100%;
+	border-top: 1rpx solid #b2b2b2;
+	box-sizing: border-box;
+}
+page{
+	width: 100%;
+	height: 100%;
+}
+.collection-item{
+	padding: 10rpx 20rpx 10rpx 20rpx;
+	border-bottom: 1rpx solid #E5E5E5;
+}
+.collection-box{
+	display: flex;
+}
+.item-img{
+	width: 95rpx;
+	height: 95rpx;
+	overflow: hidden;
+}
+.item-img image{
+	width: 100%;
+	height: 100%;
+}
+.right{
+	max-width: 83%;
+	margin-left: 20rpx;
+}
+.item-title{
+	font-size: 40rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.item-author{
+	color: #979797;
+	font-size: 30rpx;
+}

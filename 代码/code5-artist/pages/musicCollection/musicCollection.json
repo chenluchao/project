@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+	"navigationBarTitleText": "音乐收藏",
+	"enablePullDownRefresh":true,
+	"backgroundTextStyle":"dark"
+}

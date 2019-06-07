@@ -1,0 +1,174 @@
+/* pages/comment/comment.wxss */
+.page{
+	width: 100%;
+	min-height: 100%;
+	box-sizing: border-box;
+	border-top: 1rpx solid #b2b2b2;
+	margin-bottom: 80rpx;
+}
+page{
+	width: 100%;
+	height: 100%;
+}
+.nav{
+	width: 100%;
+	height: 100rpx;
+	font-size: 35rpx;
+	padding: 30rpx 0 30rpx 15rpx;
+}
+.nav text{
+	display: inline-block;
+	width: 136rpx;
+	height: 60rpx;
+	border-bottom: 10rpx solid #000;
+}
+.comment-item{
+	border-bottom: 1rpx solid #ddd;
+	padding: 50rpx 30rpx 50rpx 50rpx;
+}
+.user-info{
+	width: 100%;
+	height: 90rpx;
+	display: flex;
+}
+.user-img{
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.user-img image{
+	width: 100%;
+	height: 100%;
+}
+.user-name{
+	width: 45%;
+	height: 100%;
+	color: #979797;
+	font-size: 35rpx;
+	line-height: 90rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-left: 30rpx;
+}
+.creattime{
+	width: 38%;
+	height: 100%;
+	color: #979797;
+	font-size: 25rpx;
+	line-height: 90rpx;
+	text-align: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.comment-con{
+	color: #333;
+	width: 100%;
+	padding: 40rpx 10rpx 0 90rpx;
+	box-sizing: border-box;
+	font-size: 38rpx;
+}
+/* 收藏按钮 */
+.toolbar{
+	width: 100%;
+	height: 80rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: 1rpx solid #ccc;
+	display: flex;
+	background-color: #Efefef;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 32rpx;
+}
+.toolbar image{
+	width: 60rpx;
+	height: 60rpx;
+	vertical-align: middle;
+}
+.shell-box{
+	display: flex;
+}
+.shell-box image{
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.shell-box button{
+	margin-right: 15rpx;
+	padding: 0;
+	border: none;
+	width: 40rpx;
+	height: 40rpx;
+	position: relative;
+}
+/* 评论 */
+.comment-box{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 700rpx;
+	background-color: #fff;
+	border-top: 1rpx solid #ccc;
+	box-sizing: border-box;
+}
+.comment-in{
+	width: 90%;
+	height: 500rpx;
+	margin-top: 30rpx;
+	margin-left: 5%;
+}
+.comment-bar{
+	border-top: 1rpx solid #ccc;
+	width: 100%;
+	display: flex;
+	height: 200rpx;
+	box-sizing: border-box;
+	padding: 30rpx 20rpx 20rpx 0;
+}
+.comment-length{
+	font-size: 40rpx;
+	color: #bdbdbd;
+	width: 412rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	padding-left: 40rpx;
+	box-sizing: border-box;
+}
+.comment-cancel{
+	width: 130rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	background-color: #d8d8d8;
+	text-align: center;
+	color: #525252;
+	border-radius: 15rpx;
+	font-size: 34rpx;
+}
+.comment-put{
+	font-size: 34rpx;
+	width: 130rpx;
+	height: 100rpx;
+	background-color: #d8d8d8;
+	text-align: center;
+	line-height: 100rpx;
+	margin-left: 30rpx;
+	color: #525252;
+	border-radius: 15rpx;
+}
+.mask{
+	width: 100%;
+	height: 506rpx;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #DDDDDD;
+	opacity: 0.6;
+}

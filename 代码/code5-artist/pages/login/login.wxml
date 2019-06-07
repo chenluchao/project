@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="input-box">
+		<view class="phone">
+			<image src="../../res/img/individual_center.png"></image>
+			<input value="{{username}}" bindinput="dealInput" data-key="username" type="text" placeholder="请输入用户名" />
+		</view>
+		<view class="password">
+			<image src="../../res/img/individual_center.png"></image>
+			<input password="true" value="{{password}}" bindinput="dealInput" data-key="password" type="text" placeholder="请输入密码" />
+		</view>
+	</view>
+	<view class="login-btn {{isUsername&&isPassword?'active':''}}" bindtap="dealLogin">登录</view>
+	<view class="foot {{isdark?'dark':''}}">
+		<view>
+			<navigator hover-class="none" url="/pages/register/register">
+				免费注册
+			</navigator>
+		</view>
+		<view>
+			<navigator hover-class="none" url="/pages/retrieve/retrieve">
+				忘记密码
+			</navigator>
+		</view>
+	</view>
+</view>

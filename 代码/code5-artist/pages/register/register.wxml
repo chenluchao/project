@@ -1,0 +1,22 @@
+<!--pages/register/register.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="input-box {{isdark?'dark':''}}">
+		<view class="phone">
+			<image src="../../res/img/individual_center.png"></image>
+			<input value="{{phone}}" bindinput="dealInput" id="phone" type="text" placeholder="请输入手机号码" />
+		</view>
+		<view class="phone">
+			<image src="../../res/img/individual_center.png"></image>
+			<input value="{{username}}" bindinput="dealInput" id="username" type="text" placeholder="请输入用户名" />
+		</view>
+		<view class="password">
+			<image src="../../res/img/bottom_comment.png"></image>
+			<input password="true" value="{{password}}" bindinput="dealInput" id="password" type="text" placeholder="请输入密码" />
+		</view>
+		<view class="repeatPassword">
+			<image src="../../res/img/bottom_comment.png"></image>
+			<input password="true" value="{{repeatPassword}}" bindinput="dealInput" id="repeatPassword" type="text" placeholder="请输入重复密码" />
+		</view>
+	</view>
+	<view class="login-btn {{one&&two&&three&&four?'active':''}}" bindtap="dealReg">注册</view>
+</view>

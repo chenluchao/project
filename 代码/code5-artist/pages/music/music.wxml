@@ -1,0 +1,41 @@
+<!--pages/music/music.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="nav {{isdark?'dark':''}}">
+		<view class="search">
+			<navigator hover-class="none" url="/pages/search/search">
+				<image src="../../res/img/aliwx_search_icon.png"></image>
+			</navigator>
+		</view>
+		<view class="name">
+			音乐
+		</view>
+		<view class="mine">
+			<navigator hover-class="none" url="/pages/mine/mine">
+				<image src="../../res/img/user2.png"></image>
+			</navigator>
+		</view>
+	</view>
+	<scroll-view class="con-box {{isdark?'dark':''}}" scroll-y="true">
+		<view class="item {{isdark?'dark':''}}" wx:for="{{list}}" wx:key="{{index}}">
+			<navigator hover-class="none" url="{{item.pageName+'?id='+item.id}}">
+				<view class="box {{isdark?'dark':''}}">
+					<view class="img">
+						<view class="left">
+							<image src="{{imgUrl+item.img_url}}"></image>
+							<view class="white"></view>
+						</view>
+					</view>
+					<view class="info">
+						<view class="title">{{item.title}}</view>
+						<view class="author">作者:{{item.author_name}}</view>
+						<view class="time">
+							<text>{{item.post_date}}</text>
+							<text>收藏：{{item.like_count}}</text>
+						</view>
+						<view class="forward">{{item.forward}}</view>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</scroll-view>
+</view>
