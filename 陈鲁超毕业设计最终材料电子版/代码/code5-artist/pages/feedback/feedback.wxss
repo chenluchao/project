@@ -1,0 +1,78 @@
+/* pages/feedback/feedback.wxss */
+.page{
+	border-top: 1rpx solid #afafaf;
+}
+.nav{
+	font-size: 36rpx;
+	color: #666;
+	background-color: #FAFAFA;
+	width: 100%;
+	height: 100rpx;
+	line-height: 80rpx;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid #F2F2F2;
+}
+.btn-box{
+	display: flex;
+	width: 100%;
+	height: 200rpx;
+	background-color: #fff;
+	border-bottom: 1rpx solid #F2F2F2;
+}
+.btn-item{
+	color: #787878;
+	border: 1rpx solid #666;
+	font-size: 34rpx;
+	width: 190rpx;
+	height: 85rpx;
+	margin-top: 55rpx;
+	margin-left: 55rpx;
+	border-radius: 20rpx;
+	line-height: 85rpx;
+	text-align: center;
+}
+.active{
+	color: #0066dd;
+	border: 1rpx solid #0066DD;
+}
+.feedback-con{
+	border-bottom: 1rpx solid #aaa;
+}
+.feedback-con-in{
+	width: 90%;
+	height: 470rpx;
+	margin: 10rpx 0 10rpx 35rpx;
+}
+.foot{
+	width: 100%;
+	height: 205rpx;
+	background-color: #FAFAFA;
+	margin-top: 10rpx;
+}
+.foot-nav{
+	font-size: 36rpx;
+	color: #666;
+	background-color: #FAFAFA;
+	
+	width: 100%;
+	height: 90rpx;
+	line-height: 80rpx;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+}
+.foot-input{
+	width: 90%;
+	height: 100rpx;
+	background-color: #fff;
+	margin-left: 20rpx;
+}
+.push{
+	width: 100%;
+	height: 97rpx;
+	background-color: #0d0e0e;
+	color: #fff;
+	text-align: center;
+	line-height: 97rpx;
+	font-size: 36rpx;
+}

@@ -1,0 +1,37 @@
+/* pages/readCollection/readCollection.wxss */
+.page{
+	width: 100%;
+	height: 100%;
+	border-top: 1rpx solid #b2b2b2;
+	box-sizing: border-box;
+}
+page{
+	width: 100%;
+	height: 100%;
+}
+.collection-item{
+	padding: 10rpx 20rpx 10rpx 20rpx;
+	border-bottom: 1rpx solid #E5E5E5;
+}
+.collection-box{
+	display: flex;
+}
+.item-img{
+	border-radius: 30rpx;
+	width: 95rpx;
+	height: 95rpx;
+	overflow: hidden;
+}
+.item-img image{
+	width: 100%;
+	height: 100%;
+}
+.item-title{
+	max-width: 83%;
+	margin-left: 20rpx;
+	font-size: 40rpx;
+	line-height: 95rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

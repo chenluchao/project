@@ -1,0 +1,17 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="nav {{isdark?'dark':''}}">问题类型</view>
+	<view class="btn-box {{isdark?'dark':''}}">
+		<view data-type="1" bindtap="dealType" class="btn-item {{type==1?'active':''}}">问题咨询</view>
+		<view data-type="2" bindtap="dealType" class="btn-item {{type==2?'active':''}}">意见建议</view>
+	</view>
+	<view class="feedback-con {{isdark?'dark':''}}">
+		<view class="nav {{isdark?'dark':''}}">相关描述</view>
+		<textarea class="feedback-con-in {{isdark?'dark':''}}" id="connect" maxlength="1000" placeholder="请输入相关描述" value="{{connect}}" bindinput="dealInput"></textarea>
+	</view>
+	<view class="foot {{isdark?'dark':''}}">
+		<view class="foot-nav {{isdark?'dark':''}}">联系方式</view>
+		<input class="foot-input {{isdark?'dark':''}}" id="phone" type="text" value="{{phone}}" bindinput="dealInput" placeholder="请填写您的手机号或邮箱,以便联系" />
+	</view>
+	<view class="push" bindtap="dealPush">确认提交</view>
+</view>

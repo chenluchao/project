@@ -1,0 +1,15 @@
+<!--pages/movieCollection/movieCollection.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="collection-box {{isdark?'dark':''}}" wx:for="{{list}}" wx:key="{{index}}">
+		<navigator hover-class="none" url="{{'/pages/movieDetail/movieDetail?id='+item.id}}">
+			<view class="con-box {{isdark?'dark':''}}">
+				<view class="con-img" wx:if="{{item.img_url}}">
+					<image src="{{imagePrefix+item.img_url}}"></image>
+				</view>
+				<view class="con-title">
+					{{item.title}}
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>

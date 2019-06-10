@@ -1,0 +1,21 @@
+<!--pages/retrieve/retrieve.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="nav {{isdark?'dark':''}}">该手机仅用于确认您的身份，以确保您的账号安全</view>
+	<view class="content {{isdark?'dark':''}}">
+		<view class="username">
+			<image src="../../res/img/user2.png"></image>
+			<input type="text" placeholder="用户名"/>
+		</view>
+		<view class="sendSms">
+			<image src="../../res/img/center_message.png"></image>
+			<input type="text" placeholder="短信校验码"/>
+			<view class="sms-btn">发送...校验码</view>
+		</view>
+		<view class="code">
+			<image src="../../res/img/center_feedback.png"></image>
+			<input type="text" placeholder="验证码"/>
+			<view class="yz-code">验证码</view>
+		</view>
+	</view>
+	<view class="btn">下一步</view>
+</view>

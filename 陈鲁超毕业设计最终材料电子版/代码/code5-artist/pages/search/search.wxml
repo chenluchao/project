@@ -1,0 +1,77 @@
+<!--pages/search/search.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="search-box {{isdark?'dark':''}}">
+		<view class="search-con">
+			<view class="search-logo">
+				<image src="../../res/img/aliwx_search_icon.png"></image>
+			</view>
+			<view class="search-input">
+				<input id="keyword" bindfocus="dealHistory" bindblur="closeHistory" bindinput="dealChange" value="{{keyword}}" type="text" placeholder="搜索关键字" />
+			</view>
+		</view>
+		<view bindtap="dealSearch" class="search-btn {{keyword==''?'':'active'}}">搜索</view>
+	</view>
+	<view wx:if="{{read.length>0}}" class="read {{isdark?'dark':''}}">
+		<view class="box">
+			<view class="title {{isdark?'dark':''}}">阅读</view>
+			<view wx:for="{{read}}" wx:key="{{index}}">
+				<navigator hover-class="none" url="{{item.pageName+'?id='+item.id}}">
+					<view class="content {{isdark?'dark':''}}">
+						<view class="left">
+							<image src="{{imgUrl+item.img_url}}"></image>
+						</view>
+						<view class="right">
+							<view class="info-title line-ellipsis">{{item.title}}</view>
+							<view class="info-con line-ellipsis">{{item.forward}}</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{music.length>0}}" class="music {{isdark?'dark':''}}">
+		<view class="box">
+			<view class="title {{isdark?'dark':''}}">音乐</view>
+			<view wx:for="{{music}}" wx:key="{{index}}">
+				<navigator hover-class="none" url="{{item.pageName+'?id='+item.id}}">
+					<view class="content {{isdark?'dark':''}}">
+						<view class="left">
+							<image src="{{imgUrl+item.img_url}}"></image>
+						</view>
+						<view class="right">
+							<view class="info-title line-ellipsis">{{item.title}}</view>
+							<view class="info-con line-ellipsis">{{item.forward}}</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{movie.length>0}}" class="movie {{isdark?'dark':''}}">
+		<view class="box">
+			<view class="title {{isdark?'dark':''}}">影视</view>
+			<view wx:for="{{movie}}" wx:key="{{index}}">
+				<navigator hover-class="none" url="{{item.pageName+'?id='+item.id}}">
+					<view class="content {{isdark?'dark':''}}">
+						<view class="left">
+							<image src="{{imgUrl+item.img_url}}"></image>
+						</view>
+						<view class="right">
+							<view class="info-title line-ellipsis">{{item.title}}</view>
+							<view class="info-con line-ellipsis">{{item.forward}}</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	
+	<!-- 历史浏览记录 -->
+	<view class="history-box">
+		<view wx:if="{{focus}}">
+			<view bindtap="clickHistory" wx:if="{{history.length>0}}" class="history-item" wx:for="{{history}}" wx:key="{{index}}"  data-info="{{item}}">
+				<view data-con="{{item}}" class="history-con">{{item}}</view>
+			</view>
+		</view>
+	</view>
+</view>

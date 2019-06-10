@@ -1,0 +1,38 @@
+<!--pages/read/read.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="nav {{isdark?'dark':''}}">
+		<view class="search">
+			<navigator hover-class="none" url="/pages/search/search">
+				<image src="../../res/img/aliwx_search_icon.png"></image>
+			</navigator>
+		</view>
+		<view class="name">
+			阅读
+		</view>
+		<view class="mine">
+			<navigator hover-class="none" url="/pages/mine/mine">
+				<image src="../../res/img/user2.png"></image>
+			</navigator>
+		</view>
+	</view>
+
+	<scroll-view class="con-box" scroll-y="true">
+		<view class="item-box {{isdark?'dark':''}}">
+			<view class="item {{isdark?'dark':''}}" wx:for="{{list}}" wx:key="{{index}}">
+				<navigator hover-class="none" url="{{item.pageName+'?id='+item.id}}">
+					<view class="categoryName">-{{item.categoryName}}-</view>
+					<view class="title">{{item.title}}</view>
+					<view class="author">作者:{{item.author_name}}</view>
+					<view class="img">
+						<image src="{{imgUrl+item.img_url}}"></image>
+					</view>
+					<view class="forward">{{item.forward}}</view>
+					<view class="bottom">
+						<text class="post_date">更新时间{{item.post_date}}</text>
+						<text class="like_count">收藏{{item.like_count}}</text>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</scroll-view>
+</view>

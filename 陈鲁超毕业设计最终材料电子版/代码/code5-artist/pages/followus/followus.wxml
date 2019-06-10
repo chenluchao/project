@@ -1,0 +1,7 @@
+<!--pages/followus/followus.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="top {{isdark?'dark':''}}">扫一扫，添加属于您的私人客服</view>
+	<view class="center {{isdark?'dark':''}}">
+		<image src="../../res/img/follow.jpg"></image>
+	</view>
+</view>

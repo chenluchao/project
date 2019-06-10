@@ -1,0 +1,42 @@
+<!--pages/setting/setting.wxml-->
+<view class="page {{isdark?'dark':''}}">
+	<view class="title {{isdark?'dark':''}}">设置</view>
+	<view class="night">
+		<view>夜间模式</view>
+		<view><switch checked="{{isdark}}" bindchange="switchChange" /></view>
+	</view>
+	<view class="set-item" bindtap="dealclear">
+		<view>清理缓存</view>
+		<image src="../../res/img/user.png"></image>
+	</view>
+	<view class="title {{isdark?'dark':''}}">反馈</view>
+	<navigator hover-class="none" url="/pages/feedback/feedback">
+		<view class="set-item">
+			<view>意见与反馈</view>
+			<image src="../../res/img/user.png"></image>
+		</view>
+	</navigator>
+	<navigator hover-class="none" url="/pages/followus/followus">
+		<view class="set-item">
+			<view>关注我们</view>
+			<image src="../../res/img/user.png"></image>
+		</view>
+	</navigator>
+	<view class="set-item" bindtap="dealgrade">
+		<view>给一个评分</view>
+		<image src="../../res/img/user.png"></image>
+	</view>
+	<view class="title {{isdark?'dark':''}}">关于</view>
+	<navigator hover-class="none" url="/pages/agreement/agreement">
+		<view class="set-item">
+			<view>用户协议</view>
+			<image src="../../res/img/user.png"></image>
+		</view>
+	</navigator>
+	<view class="banben">
+		<view>版本号</view>
+		<view>1.0.0</view>
+	</view>
+	<view class="grey {{isdark?'dark':''}}"></view>
+	<view class="logout" bindtap="dealLogout">退出登录</view>
+</view>
